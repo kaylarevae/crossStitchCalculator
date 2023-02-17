@@ -1,4 +1,142 @@
-.parent{
+* {
+  padding: 5px;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+.wholeThing {
   display: flex;
 }
-.
+
+.sidebar{
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* background-color: #e8c32b; */
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+#left{
+  left: 0;
+}
+#right{
+  right: 0;
+}
+
+.content {
+  margin-left: 150px; 
+  margin-right: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 840px) {
+  div.sidebar {
+    display: none;
+  } 
+  div.aboutContainer{
+    grid-template-columns: 100% 100%;
+  }
+}
+
+h1{
+  font-family: all-round-gothic,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2{
+  font-family: all-round-gothic,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #3e3e3e;
+  text-align: center;
+  font-size: 1.875em;
+}
+form, p {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+span {
+  font-weight: 700;
+  color: #3e3e3e;
+}
+
+button {
+  font-family: all-round-gothic,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color:#215b4e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+form {
+  line-height: 2.25;
+  text-align: center;
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+#input{
+  background-color: #e8c32b;
+  border: dashed 3px #215b4e;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#result {
+  padding: 50px;
+}
+
+div > div > #pinImage > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 700px;
+}
+
+a {
+  font-weight: 700;
+  color: #3b6f7d;
+}
+
+#footerAd{
+  /* background-color: #e8c32b; */
+  width: 100%;
+  margin-top: 50px;
+}

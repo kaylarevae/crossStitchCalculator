@@ -13,6 +13,8 @@ const resultWidth = Math.round((a/d)+(2*c));
 const resultHeight = Math.round((b/d)+(2*c));
 const designWidth = Math.round(a/d);
 const designHeight = Math.round(b/d);
+document.getElementById("response").innerText =
+  `${resultWidth} inches by ${resultHeight} inches`
 document.getElementById("result").innerText =
-  `A piece of ${d} stitches per inch fabric ${resultWidth} inches wide and ${resultHeight} inches tall is required to complete a design ${a} stitches wide and ${b} stitches tall. This will produce a finished design ${designWidth} inches wide by ${designHeight} inches tall and leave a border ${c} on all sides.`
+  `A piece of ${d} stitches per inch fabric ${resultWidth} inches wide and ${resultHeight} inches tall is required to complete a design ${a} stitches wide and ${b} stitches tall. This will produce a finished design ${designWidth} inches wide by ${designHeight} inches tall and leave a ${c} inch border on all sides.`
 });
